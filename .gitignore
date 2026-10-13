@@ -1,0 +1,12 @@
+# Local environments, third-party tools, and private source-derived material
+analysis/.venv/
+analysis/tools/
+analysis/raw/
+analysis/transcripts/
+__pycache__/
+*.profraw
+
+# Regenerable synthesis cache and uncompressed intermediate
+pilot/build/
+pilot/output/*.wav
+pilot/output-v2/*.wav

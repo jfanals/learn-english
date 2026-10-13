@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102826">
+  <meta name="description" content="Practice American English with Brazilian Portuguese guidance. A music-production lesson with adjustable pauses and answer time.">
+  <title>English, in rhythm — speaking practice</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a href="./" class="brand" aria-label="English, in rhythm home"><span class="brand-icon" aria-hidden="true">≋</span> English, in rhythm<span class="brand-dot">.</span></a>
+      <span class="language-badge">PT-BR <span aria-hidden="true">→</span> EN-US</span>
+    </header>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">YOUR PERSONAL SPEAKING STUDIO</p>
+        <h1>A little less hesitation.<br>A little more <em>flow.</em></h1>
+        <p class="intro-copy">American English, guided in Brazilian Portuguese. Listen, find your words, and answer out loud—at your own pace.</p>
+      </section>
+      <div class="workspace">
+        <section class="player-card" aria-labelledby="lesson-title">
+          <div class="lesson-heading"><div><p class="eyebrow">PILOT 01 · MUSIC & EVERYDAY LIFE</p><h2 id="lesson-title">Now, yesterday, tomorrow</h2></div><span class="revision">REVISED AUDIO</span></div>
+          <div class="chapter-now"><span id="chapter-number">01 / 10</span><span id="chapter-name">Como praticar</span></div>
+          <div class="stage" id="stage" data-phase="ready">
+            <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p class="stage-label" id="stage-label" aria-live="polite">Loading your lesson…</p>
+            <p class="stage-help" id="stage-help">Preparing the original lesson clips.</p>
+            <div class="countdown" id="countdown" aria-hidden="true"></div>
+            <div class="current-line" id="current-line" hidden></div>
+          </div>
+          <div class="progress-meta"><span id="elapsed">0:00</span><span id="clip-count">Clip 1 / 156</span><span id="duration">15:40</span></div>
+          <label class="sr-only" for="lesson-progress">Lesson position</label>
+          <input class="lesson-progress" id="lesson-progress" type="range" min="0" max="155" value="0" step="1" disabled>
+          <div class="transport" role="group" aria-label="Playback controls">
+            <button class="icon-button" id="previous" aria-label="Previous clip" disabled>↤</button>
+            <button class="play-button" id="play" disabled><span id="play-icon" aria-hidden="true">▶</span><span id="play-label">Play lesson</span></button>
+            <button class="icon-button" id="next" aria-label="Next clip or skip pause" disabled>↦</button>
+          </div>
+          <div class="secondary-controls"><button id="repeat" disabled>↺ Repeat clip</button><button id="skip-pause" hidden>Skip pause →</button><label class="toggle"><input type="checkbox" id="show-text"> Show current line</label></div>
+          <p class="error" id="error" role="alert" hidden></p>
+          <p class="tip"><span aria-hidden="true">✦</span> Speak <strong>before</strong> the example answer. Try listening without reading first.</p>
+        </section>
+        <aside class="pace-card" aria-labelledby="pace-title">
+          <p class="eyebrow">MAKE SPACE FOR YOUR WORDS</p><h2 id="pace-title">Find your pace</h2>
+          <p class="muted">Change a pause even while it’s counting down. Your progress stays put.</p>
+          <div class="setting"><div class="setting-heading"><label for="sentence-pause">Between sentences</label><output id="sentence-output" for="sentence-pause">1×</output></div><p>Breathing room after speech.</p><input id="sentence-pause" type="range" min="0.25" max="3" step="0.05" value="1"><div class="range-labels"><span>Shorter</span><span>More space</span></div><small id="sentence-detail">Original gaps: 0.6–0.8 seconds</small></div>
+          <div class="setting"><div class="setting-heading"><label for="answer-pause">Time to answer</label><output id="answer-output" for="answer-pause">1×</output></div><p>Extra thinking time for speaking practice.</p><input id="answer-pause" type="range" min="0.5" max="2.5" step="0.05" value="1"><div class="range-labels"><span>Challenge me</span><span>Let me think</span></div><small id="answer-detail">Most answers: 4–8 seconds</small></div>
+          <button class="reset" id="reset-pace">Restore original pacing</button>
+          <div class="privacy"><span aria-hidden="true">◌</span><p>Just you and the lesson.<br><span>No microphone recording. No account. No analytics.</span></p></div>
+        </aside>
+      </div>
+      <section class="chapter-section" aria-labelledby="chapters-title"><div class="section-heading"><h2 id="chapters-title">The session</h2><p>Jump to a chapter. Or take it from the top.</p></div><nav id="chapters" aria-label="Lesson chapters"></nav></section>
+      <section class="practice-notes"><div><p class="eyebrow">THREE TIME FRAMES, ONE CONVERSATION</p><h2>From the studio<br>to everyday life.</h2></div><div class="note-grid"><article><span>01 · NOW</span><h3>What’s in progress?</h3><p>Talk about a track or the mix you’re working on.</p></article><article><span>02 · YESTERDAY</span><h3>What happened?</h3><p>Build past statements, questions, and negatives.</p></article><article><span>03 · TOMORROW</span><h3>What’s the plan?</h3><p>Finish a mix. Meet a friend. Make it your own.</p></article></div></section>
+      <noscript><p class="error">This clip player needs JavaScript enabled.</p></noscript>
+    </main>
+    <footer><span>Original lessons. Local voices. Real practice.</span><span>Audio-first recall practice · Not affiliated with Pimsleur.</span></footer>
+  </div>
+</body>
+</html>

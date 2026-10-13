@@ -1,0 +1,10 @@
+{
+  "name": "english-in-rhythm",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "export": "python3 scripts/export_site.py",
+    "serve": "python3 -m http.server 4173 --directory site"
+  }
+}
