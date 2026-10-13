@@ -1,3 +1,8 @@
+# Keep private local lesson production, analysis, and session state out of public git
+.pi/
+analysis/
+pilot/
+
 # Local environments, third-party tools, and private source-derived material
 analysis/.venv/
 analysis/tools/
